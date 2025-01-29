@@ -21,19 +21,17 @@ This is an interactive web application in which users can login and create a per
 
 - **Frontend:** HTML , CSS, JAVASCRIPT 
 
-- **Framework:** React.js
+    - **Framework:** React.js
 
-- **Styling:** Tailwind CSS 
+    - **Styling:** Tailwind CSS 
 
+- **Backend:**
 
+    - **Framework:** Node.js with Express.js
 
-## Backend:
+    - **Database:** MongoDB
 
-- **Framework:** Node.js with Express.js
-
-- **Database:** MongoDB
-
-- **Hosting:** Vercel/GitHub Pages (Frontend) and Render/Heroku (Backend)
+    - **Hosting:** Vercel/GitHub Pages (Frontend) and Render/Heroku (Backend)
 
 
 ## Why This Project:
