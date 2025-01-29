@@ -1,0 +1,22 @@
+{
+  "name": "s73_aditya_nikam_funny_reasons_why_no_homework",
+  "version": "1.0.0",
+  "description": "A fun and interactive web app where users create, share, and vote on hilarious excuses for not doing homework, enhancing both creativity and technical web development skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalviumcommunity/S73_aditya_nikam_Funny_Reasons_Why_No_Homework.git"
+  },
+  "author": "Aditya Nikam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalviumcommunity/S73_aditya_nikam_Funny_Reasons_Why_No_Homework/issues"
+  },
+  "homepage": "https://github.com/kalviumcommunity/S73_aditya_nikam_Funny_Reasons_Why_No_Homework#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
