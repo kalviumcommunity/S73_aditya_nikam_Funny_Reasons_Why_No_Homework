@@ -48,3 +48,6 @@ This is an interactive web application in which users can login and create a per
 
 - ## Render Link:
 - https://s73-aditya-nikam-funny-reasons-why-no.onrender.com/
+
+-  ## Netlify Link:
+-  https://poetic-bublanina-a24332.netlify.app/
