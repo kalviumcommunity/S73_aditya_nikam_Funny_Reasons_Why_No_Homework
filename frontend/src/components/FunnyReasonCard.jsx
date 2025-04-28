@@ -1,19 +1,25 @@
+// src/components/FunnyReasonCard.jsx
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function FunnyReasonCard({ title, description, date }) {
   return (
-    <div style={{
-      border: "1px solid #ccc",
-      padding: "16px",
-      marginBottom: "12px",
-      borderRadius: "8px",
-      backgroundColor: "#f9f9f9"
-    }}>
-      <h2 style={{ marginBottom: "8px" }}>{title}</h2>
-      <p style={{ marginBottom: "4px" }}>{description}</p>
-      <small style={{ color: "#666" }}>{date}</small>
-    </div>
+    <motion.div
+      style={{
+        border: "1px solid #ccc",
+        padding: "16px",
+        marginBottom: "12px",
+        borderRadius: "8px",
+        backgroundColor: "#f9f9f9"
+      }}
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+    >
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <small>{date}</small>
+    </motion.div>
   );
 }
 

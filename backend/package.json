@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/kalviumcommunity/S73_aditya_nikam_Funny_Reasons_Why_No_Homework#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "framer-motion": "^12.9.2",
     "mongoose": "^8.13.1"
   }
 }
