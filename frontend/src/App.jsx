@@ -1,9 +1,10 @@
+// src/App.jsx
+
 import { useState } from "react";
 import { motion } from "framer-motion";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
+// Funny excuses array
 const excuses = [
   "My dog ate my homework!",
   "Aliens abducted my notebook!",
@@ -21,33 +22,51 @@ export default function App() {
   };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Funny Homework Excuses</h1>
-      <div className="card">
-        <button onClick={generateExcuse}>
+    <div style={{ 
+      display: "flex", 
+      flexDirection: "column", 
+      alignItems: "center", 
+      justifyContent: "center", 
+      minHeight: "100vh", 
+      backgroundColor: "#f0f8ff",
+      padding: "20px"
+    }}>
+      <h1 style={{ marginBottom: "20px", fontSize: "2.5rem", color: "#333" }}>
+        Funny Homework Excuses
+      </h1>
+
+      <motion.div 
+        className="card"
+        style={{ backgroundColor: "#fff", padding: "30px", borderRadius: "12px", boxShadow: "0px 4px 10px rgba(0,0,0,0.1)", textAlign: "center" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        <button 
+          onClick={generateExcuse}
+          style={{ 
+            backgroundColor: "#007BFF", 
+            color: "#fff", 
+            padding: "12px 24px", 
+            border: "none", 
+            borderRadius: "8px", 
+            cursor: "pointer", 
+            marginBottom: "20px", 
+            fontSize: "1rem" 
+          }}
+        >
           Generate Random Excuse
         </button>
+
         {randomExcuse && (
           <motion.p 
-            className="text-lg font-semibold"
+            style={{ fontSize: "1.2rem", fontWeight: "600", color: "#555" }}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
             {randomExcuse}
           </motion.p>
         )}
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </motion.div>
+    </div>
   );
 }
