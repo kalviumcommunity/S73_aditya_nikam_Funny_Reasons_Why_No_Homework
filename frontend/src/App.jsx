@@ -1,20 +1,18 @@
-// src/App.jsx
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
 
-// Funny excuses array
-const excuses = [
-  "My dog ate my homework!",
-  "Aliens abducted my notebook!",
-  "My little brother turned it into a paper airplane!",
-  "The internet went down when I was about to start!",
-  "I accidentally wrote it in invisible ink!",
-];
-
 export default function App() {
-  const [randomExcuse, setRandomExcuse] = useState("");
+  // Hardcoded excuses array
+  const excuses = [
+    { id: 1, text: "My dog ate my homework!" },
+    { id: 2, text: "Aliens abducted my notebook!" },
+    { id: 3, text: "My little brother turned it into a paper airplane!" },
+    { id: 4, text: "The internet went down when I was about to start!" },
+    { id: 5, text: "I accidentally wrote it in invisible ink!" }
+  ];
+
+  const [randomExcuse, setRandomExcuse] = useState(null);
 
   const generateExcuse = () => {
     const excuse = excuses[Math.floor(Math.random() * excuses.length)];
@@ -63,7 +61,7 @@ export default function App() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            {randomExcuse}
+            {randomExcuse.text}
           </motion.p>
         )}
       </motion.div>
